@@ -1,6 +1,7 @@
 library(readxl)
 library(dplyr)
 
+##Data exploration on IC50
 DDR_IC50_raw <- read.csv("drive:/DDR_IC50_data_raw.csv", header = TRUE)
 DDR_IC50_curated <- read.csv("drive:/DDR_03_bioactivity_IC50_data_curated.csv", header = TRUE)
 merge1 <- merge(x = DDR_IC50_curated,y = DDR_IC50_raw, by = "molecule_chembl_id", all = TRUE)
