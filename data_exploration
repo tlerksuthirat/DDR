@@ -19,7 +19,7 @@ document_chembl_id <- unique(merge1_Ki$document_chembl_id)
 write.csv(document_chembl_id, file= "document_chembl_id_Ki.csv")
 molecule_chembl_id <- unique(DDR_Ki_curated$molecule_chembl_id)
 
-##count ioactivity
+##count bioactivity
 bioactivity_IC50_intermediate <- DDR_IC50_curated %>%
   filter(class == "intermediate")
 bioactivity_Ki_intermediate <- DDR_Ki_curated %>%
